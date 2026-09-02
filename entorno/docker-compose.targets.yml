@@ -1,0 +1,37 @@
+services:
+  si084_db:
+    image: mysql:8.0
+    container_name: si084_db
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: LabRoot_2024
+      MYSQL_DATABASE: erp_finanzas
+    networks: [audit_net]
+
+  si084_juiceshop:
+    image: bkimminich/juice-shop:latest
+    container_name: si084_juiceshop
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:3000:3000"
+    networks: [audit_net]
+
+  si084_portal:
+    image: nginx:1.25
+    container_name: si084_portal
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8080:80"
+    networks: [audit_net]
+
+  si084_dvwa:
+    image: vulnerables/web-dvwa:latest
+    container_name: si084_dvwa
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8081:80"
+    networks: [audit_net]
+
+networks:
+  audit_net:
+    external: true

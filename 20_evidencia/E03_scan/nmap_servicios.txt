@@ -1,0 +1,41 @@
+Starting Nmap 7.98 ( https://nmap.org ) at 2026-09-02 21:50 +0000
+Nmap scan report for si084_dvwa.audit_net (172.18.0.2)
+Host is up (0.0000040s latency).
+Not shown: 65534 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Apache httpd 2.4.25 ((Debian))
+|_http-server-header: Apache/2.4.25 (Debian)
+|_http-title: 400 Bad Request
+MAC Address: A2:6E:FD:E5:4B:EE (Unknown)
+
+Nmap scan report for si084_juiceshop.audit_net (172.18.0.3)
+Host is up (0.0000030s latency).
+Not shown: 65534 closed tcp ports (reset)
+PORT     STATE SERVICE VERSION
+3000/tcp open  ppp?  (Node.js/Express - OWASP Juice Shop, fingerprint unrecognized by nmap-services)
+MAC Address: 4A:B5:CB:97:2C:B0 (Unknown)
+
+Nmap scan report for si084_portal.audit_net (172.18.0.4)
+Host is up (0.0000030s latency).
+Not shown: 65534 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+80/tcp open  http    nginx 1.25.5
+|_http-server-header: nginx/1.25.5
+|_http-title: Welcome to nginx!
+MAC Address: A2:D3:E3:CF:86:1B (Unknown)
+
+Nmap scan report for si084_db.audit_net (172.18.0.5)
+Host is up (0.0000030s latency).
+Not shown: 65533 closed tcp ports (reset)
+PORT      STATE SERVICE VERSION
+3306/tcp  open  mysql   MySQL 8.0.46
+| mysql-info:
+|   Protocol: 10
+|   Version: 8.0.46
+|   Auth Plugin Name: caching_sha2_password
+| ssl-cert: Subject: commonName=MySQL_Server_8.0.46_Auto_Generated_Server_Certificate
+33060/tcp open  mysqlx  MySQL X protocol listener
+MAC Address: 22:1E:48:9A:AC:DD (Unknown)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 4 IP addresses (4 hosts up) scanned in 14.17 seconds
