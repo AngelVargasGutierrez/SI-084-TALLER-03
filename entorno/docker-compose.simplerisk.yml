@@ -1,0 +1,23 @@
+services:
+  simplerisk-db:
+    image: mariadb:11
+    container_name: si084_srdb
+    restart: unless-stopped
+    environment:
+      MARIADB_ROOT_PASSWORD: SimpleRisk_lab
+      MARIADB_DATABASE: simplerisk
+    networks: [audit_net]
+
+  simplerisk:
+    image: simplerisk/simplerisk:latest
+    container_name: si084_simplerisk
+    restart: unless-stopped
+    depends_on: [simplerisk-db]
+    ports:
+      - "127.0.0.1:8083:80"
+      - "127.0.0.1:8444:443"
+    networks: [audit_net]
+
+networks:
+  audit_net:
+    external: true

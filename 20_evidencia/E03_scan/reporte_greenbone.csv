@@ -1,0 +1,1097 @@
+IP,Hostname,Port,Port Protocol,CVSS,Severity,QoD,Solution Type,NVT Name,Summary,Specific Result,NVT OID,CVEs,Task ID,Task Name,Timestamp,Result ID,Impact,Solution,Affected Software/OS,Vulnerability Insight,Vulnerability Detection Method,Product Detection Result,BIDs,CERTs,Other References
+172.18.0.3,si084_juiceshop.audit_net,3000,tcp,0.0,Log,70,"","Allowed HTTP Methods Enumeration","Enumerates which HTTP methods are allowed.","The following list contains the URLs and corresponding supported HTTP methods.
+
+URL                                    | HTTP Methods
+-------------------------------------------------------------------------------
+http://si084_juiceshop.audit_net:3000/ | GET,HEAD,POST,PUT,DELETE,OPTIONS,TRACE
+",1.3.6.1.4.1.25623.1.0.153974,"",f4c76f15-73fc-4a70-adb9-f2da935ace07,"E03-Escaneo-si084-lab",2026-09-02T21:30:47Z,dcd7db15-0c96-4189-868d-77a6cba61e42,"","","","'- Basic HTTP methods: GET, HEAD, POST, PUT, DELETE, CONNECT,
+  OPTIONS, TRACE
+
+  - Extended HTTP methods: ACL, BASELINE-CONTROL, BIND, CHECKIN, CHECKOUT, COPY, LABEL, LINK, LOCK,
+  MERGE, MKACTIVITY, MKCALENDAR, MKCOL, MKREDIRECTREF, MKWORKSPACE, MOVE, ORDERPATCH, PATCH, PRI,
+  PROPFIND, PROPPATCH, REBIND, REPORT, SEARCH, UNBIND, UNCHECKOUT, UNLINK, UNLOCK, UPDATE,
+  UPDATEREDIRECTREF, VERSION-CONTROL","Sends multiple HTTP requests and checks the responses.
+
+  Disclaimer:
+
+  - This enumeration script is provided 'as is' (means no support is given) and only providing
+  rudimentary information about the possible enabled methods
+
+  - This script doesn't guarantee completeness or full reliability
+
+  For more reliable determination of the enabled HTTP methods please inspect the configuration of
+  the web server manually and directly on the target host.
+Details:
+Allowed HTTP Methods Enumeration
+(OID: 1.3.6.1.4.1.25623.1.0.153974)
+Version used: 2025-02-28T05:38:49Z
+","","","",""
+172.18.0.4,si084_portal.audit_net,80,tcp,0.0,Log,70,"","Allowed HTTP Methods Enumeration","Enumerates which HTTP methods are allowed.","The following list contains the URLs and corresponding supported HTTP methods.
+
+URL                            | HTTP Methods
+---------------------------------------------
+http://si084_portal.audit_net/ | GET,HEAD
+",1.3.6.1.4.1.25623.1.0.153974,"",f4c76f15-73fc-4a70-adb9-f2da935ace07,"E03-Escaneo-si084-lab",2026-09-02T21:30:47Z,f0c525a8-73b9-407d-80c1-0abc09378632,"","","","'- Basic HTTP methods: GET, HEAD, POST, PUT, DELETE, CONNECT,
+  OPTIONS, TRACE
+
+  - Extended HTTP methods: ACL, BASELINE-CONTROL, BIND, CHECKIN, CHECKOUT, COPY, LABEL, LINK, LOCK,
+  MERGE, MKACTIVITY, MKCALENDAR, MKCOL, MKREDIRECTREF, MKWORKSPACE, MOVE, ORDERPATCH, PATCH, PRI,
+  PROPFIND, PROPPATCH, REBIND, REPORT, SEARCH, UNBIND, UNCHECKOUT, UNLINK, UNLOCK, UPDATE,
+  UPDATEREDIRECTREF, VERSION-CONTROL","Sends multiple HTTP requests and checks the responses.
+
+  Disclaimer:
+
+  - This enumeration script is provided 'as is' (means no support is given) and only providing
+  rudimentary information about the possible enabled methods
+
+  - This script doesn't guarantee completeness or full reliability
+
+  For more reliable determination of the enabled HTTP methods please inspect the configuration of
+  the web server manually and directly on the target host.
+Details:
+Allowed HTTP Methods Enumeration
+(OID: 1.3.6.1.4.1.25623.1.0.153974)
+Version used: 2025-02-28T05:38:49Z
+","","","",""
+172.18.0.2,si084_dvwa.audit_net,,,0.0,Log,80,"","Apache HTTP Server Detection Consolidation","Consolidation of Apache HTTP Server detections.","Detected Apache HTTP Server
+
+Version:       2.4.25
+Location:      80/tcp
+CPE:           cpe:/a:apache:http_server:2.4.25
+
+Concluded from version/product identification result:
+Server: Apache/2.4.25 (Debian)
+",1.3.6.1.4.1.25623.1.0.117232,"",f4c76f15-73fc-4a70-adb9-f2da935ace07,"E03-Escaneo-si084-lab",2026-09-02T21:30:47Z,dbf45c3f-5c8b-4682-b9dd-3d1a486a2aea,"","","","","
+Details:
+Apache HTTP Server Detection Consolidation
+(OID: 1.3.6.1.4.1.25623.1.0.117232)
+Version used: 2024-03-08T15:37:10Z
+","","","",""
+172.18.0.3,si084_juiceshop.audit_net,,,0.0,Log,80,"","CPE Inventory","This routine uses information collected by other routines about
+  CPE identities of operating systems, services and applications detected during the scan.
+
+  Note: Some CPEs for specific products might show up twice or more in the output. Background:
+
+  After a product got renamed or a specific vendor was acquired by another one it might happen that
+  a product gets a new CPE within the NVD CPE Dictionary but older entries are kept with the older
+  CPE.","172.18.0.3|cpe:/o:linux:kernel
+
+",1.3.6.1.4.1.25623.1.0.810002,"",f4c76f15-73fc-4a70-adb9-f2da935ace07,"E03-Escaneo-si084-lab",2026-09-02T21:30:47Z,c5012db3-ecae-4458-aed8-30e18b8cb88b,"","","","","
+Details:
+CPE Inventory
+(OID: 1.3.6.1.4.1.25623.1.0.810002)
+Version used: 2022-07-27T10:11:28Z
+","","","",""
+172.18.0.2,si084_dvwa.audit_net,,,0.0,Log,80,"","CPE Inventory","This routine uses information collected by other routines about
+  CPE identities of operating systems, services and applications detected during the scan.
+
+  Note: Some CPEs for specific products might show up twice or more in the output. Background:
+
+  After a product got renamed or a specific vendor was acquired by another one it might happen that
+  a product gets a new CPE within the NVD CPE Dictionary but older entries are kept with the older
+  CPE.","172.18.0.2|cpe:/a:apache:http_server:2.4.25
+172.18.0.2|cpe:/o:debian:debian_linux:9
+
+",1.3.6.1.4.1.25623.1.0.810002,"",f4c76f15-73fc-4a70-adb9-f2da935ace07,"E03-Escaneo-si084-lab",2026-09-02T21:30:47Z,30ac94e0-c4d9-43e4-8d40-06f0eceeb3a2,"","","","","
+Details:
+CPE Inventory
+(OID: 1.3.6.1.4.1.25623.1.0.810002)
+Version used: 2022-07-27T10:11:28Z
+","","","",""
+172.18.0.4,si084_portal.audit_net,,,0.0,Log,80,"","CPE Inventory","This routine uses information collected by other routines about
+  CPE identities of operating systems, services and applications detected during the scan.
+
+  Note: Some CPEs for specific products might show up twice or more in the output. Background:
+
+  After a product got renamed or a specific vendor was acquired by another one it might happen that
+  a product gets a new CPE within the NVD CPE Dictionary but older entries are kept with the older
+  CPE.","172.18.0.4|cpe:/a:f5:nginx:1.25.5
+172.18.0.4|cpe:/a:nginx:nginx:1.25.5
+172.18.0.4|cpe:/o:linux:kernel
+
+",1.3.6.1.4.1.25623.1.0.810002,"",f4c76f15-73fc-4a70-adb9-f2da935ace07,"E03-Escaneo-si084-lab",2026-09-02T21:30:47Z,9ac86710-91df-446e-85ae-18f3b346ef55,"","","","","
+Details:
+CPE Inventory
+(OID: 1.3.6.1.4.1.25623.1.0.810002)
+Version used: 2022-07-27T10:11:28Z
+","","","",""
+172.18.0.5,si084_db.audit_net,,,0.0,Log,80,"","CPE Inventory","This routine uses information collected by other routines about
+  CPE identities of operating systems, services and applications detected during the scan.
+
+  Note: Some CPEs for specific products might show up twice or more in the output. Background:
+
+  After a product got renamed or a specific vendor was acquired by another one it might happen that
+  a product gets a new CPE within the NVD CPE Dictionary but older entries are kept with the older
+  CPE.","172.18.0.5|cpe:/a:mysql:mysql:8.0.46
+172.18.0.5|cpe:/a:oracle:mysql:8.0.46
+172.18.0.5|cpe:/o:linux:kernel
+
+",1.3.6.1.4.1.25623.1.0.810002,"",f4c76f15-73fc-4a70-adb9-f2da935ace07,"E03-Escaneo-si084-lab",2026-09-02T21:30:47Z,a4da303c-cb3d-41f8-a0ad-a7cbad5f2f83,"","","","","
+Details:
+CPE Inventory
+(OID: 1.3.6.1.4.1.25623.1.0.810002)
+Version used: 2022-07-27T10:11:28Z
+","","","",""
+172.18.0.5,si084_db.audit_net,3306,tcp,0.0,Log,80,"Workaround","Database Open Access Information Disclosure Vulnerability","Various Database server might be prone to an information
+  disclosure vulnerability if accessible to remote systems.","Oracle MySQL can be accessed by remote attackers
+",1.3.6.1.4.1.25623.1.0.902799,"",f4c76f15-73fc-4a70-adb9-f2da935ace07,"E03-Escaneo-si084-lab",2026-09-02T21:30:47Z,33d89e77-b28d-4ecb-89b3-ee7d1baba5bf,"Successful exploitation could allow an attacker to obtain
+  sensitive information from the database.","Restrict database access to remote systems. Please see the
+  manual of the affected database server for more information.","'- Oracle MySQL
+
+  - MariaDB
+
+  - IBM DB2
+
+  - PostgreSQL
+
+  - IBM solidDB
+
+  - Oracle Database
+
+  - Microsoft SQL Server","The remote database server is not restricting direct access from
+  remote systems.","Checks the result of various database server detections and
+  evaluates their results.
+Details:
+Database Open Access Information Disclosure Vulnerability
+(OID: 1.3.6.1.4.1.25623.1.0.902799)
+Version used: 2025-09-09T05:38:49Z
+","","","",""
+172.18.0.3,si084_juiceshop.audit_net,,,0.0,Log,80,"","Hostname Determination Reporting","The script reports information on how the hostname of the target
+  was determined.","Hostname determination for IP 172.18.0.3:
+
+Hostname|Source
+si084_juiceshop.audit_net|Reverse-DNS
+",1.3.6.1.4.1.25623.1.0.108449,"",f4c76f15-73fc-4a70-adb9-f2da935ace07,"E03-Escaneo-si084-lab",2026-09-02T21:30:47Z,dad4a377-2ac7-4c20-9d50-c2c3c98f6a76,"","","","","
+Details:
+Hostname Determination Reporting
+(OID: 1.3.6.1.4.1.25623.1.0.108449)
+Version used: 2022-07-27T10:11:28Z
+","","","",""
+172.18.0.4,si084_portal.audit_net,,,0.0,Log,80,"","Hostname Determination Reporting","The script reports information on how the hostname of the target
+  was determined.","Hostname determination for IP 172.18.0.4:
+
+Hostname|Source
+si084_portal.audit_net|Reverse-DNS
+",1.3.6.1.4.1.25623.1.0.108449,"",f4c76f15-73fc-4a70-adb9-f2da935ace07,"E03-Escaneo-si084-lab",2026-09-02T21:30:47Z,473760a5-2c3a-4124-b806-8caa4d0d09b0,"","","","","
+Details:
+Hostname Determination Reporting
+(OID: 1.3.6.1.4.1.25623.1.0.108449)
+Version used: 2022-07-27T10:11:28Z
+","","","",""
+172.18.0.2,si084_dvwa.audit_net,,,0.0,Log,80,"","Hostname Determination Reporting","The script reports information on how the hostname of the target
+  was determined.","Hostname determination for IP 172.18.0.2:
+
+Hostname|Source
+si084_dvwa.audit_net|Reverse-DNS
+",1.3.6.1.4.1.25623.1.0.108449,"",f4c76f15-73fc-4a70-adb9-f2da935ace07,"E03-Escaneo-si084-lab",2026-09-02T21:30:47Z,971874f4-82c8-42be-84c2-f0c3062b3ac0,"","","","","
+Details:
+Hostname Determination Reporting
+(OID: 1.3.6.1.4.1.25623.1.0.108449)
+Version used: 2022-07-27T10:11:28Z
+","","","",""
+172.18.0.5,si084_db.audit_net,,,0.0,Log,80,"","Hostname Determination Reporting","The script reports information on how the hostname of the target
+  was determined.","Hostname determination for IP 172.18.0.5:
+
+Hostname|Source
+si084_db.audit_net|Reverse-DNS
+",1.3.6.1.4.1.25623.1.0.108449,"",f4c76f15-73fc-4a70-adb9-f2da935ace07,"E03-Escaneo-si084-lab",2026-09-02T21:30:47Z,78c8a6f9-abc4-40e9-ad08-eeb66c943de8,"","","","","
+Details:
+Hostname Determination Reporting
+(OID: 1.3.6.1.4.1.25623.1.0.108449)
+Version used: 2022-07-27T10:11:28Z
+","","","",""
+172.18.0.2,si084_dvwa.audit_net,80,tcp,0.0,Log,80,"","HTTP Security Headers Detection","All known security headers are being checked on the remote web
+  server.
+
+  On completion a report will hand back whether a specific security header has been implemented
+  (including its value and if it is deprecated) or is missing on the target.","Missing Headers                   | More Information
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Content-Security-Policy           | https://owasp.org/www-project-secure-headers/#content-security-policy
+Cross-Origin-Embedder-Policy      | https://scotthelme.co.uk/coop-and-coep/, Note: This is an upcoming header
+Cross-Origin-Opener-Policy        | https://scotthelme.co.uk/coop-and-coep/, Note: This is an upcoming header
+Cross-Origin-Resource-Policy      | https://scotthelme.co.uk/coop-and-coep/, Note: This is an upcoming header
+Document-Policy                   | https://w3c.github.io/webappsec-feature-policy/document-policy#document-policy-http-header
+Feature-Policy                    | https://owasp.org/www-project-secure-headers/#feature-policy, Note: The Feature Policy header has been renamed to Permissions Policy
+Permissions-Policy                | https://w3c.github.io/webappsec-feature-policy/#permissions-policy-http-header-field
+Referrer-Policy                   | https://owasp.org/www-project-secure-headers/#referrer-policy
+Sec-Fetch-Dest                    | https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers#fetch_metadata_request_headers, Note: This is a new header supported only in newer browsers like e.g. Firefox 90
+Sec-Fetch-Mode                    | https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers#fetch_metadata_request_headers, Note: This is a new header supported only in newer browsers like e.g. Firefox 90
+Sec-Fetch-Site                    | https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers#fetch_metadata_request_headers, Note: This is a new header supported only in newer browsers like e.g. Firefox 90
+Sec-Fetch-User                    | https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers#fetch_metadata_request_headers, Note: This is a new header supported only in newer browsers like e.g. Firefox 90
+X-Content-Type-Options            | https://owasp.org/www-project-secure-headers/#x-content-type-options
+X-Frame-Options                   | https://owasp.org/www-project-secure-headers/#x-frame-options
+X-Permitted-Cross-Domain-Policies | https://owasp.org/www-project-secure-headers/#x-permitted-cross-domain-policies
+X-XSS-Protection                  | https://owasp.org/www-project-secure-headers/#x-xss-protection, Note: Most major browsers have dropped / deprecated support for this header in 2020.
+",1.3.6.1.4.1.25623.1.0.112081,"",f4c76f15-73fc-4a70-adb9-f2da935ace07,"E03-Escaneo-si084-lab",2026-09-02T21:30:47Z,5b1b1ec3-721f-4e78-8e8f-a91b19b66210,"","","","","
+Details:
+HTTP Security Headers Detection
+(OID: 1.3.6.1.4.1.25623.1.0.112081)
+Version used: 2025-03-21T15:40:43Z
+","","","",""
+172.18.0.4,si084_portal.audit_net,80,tcp,0.0,Log,80,"","HTTP Security Headers Detection","All known security headers are being checked on the remote web
+  server.
+
+  On completion a report will hand back whether a specific security header has been implemented
+  (including its value and if it is deprecated) or is missing on the target.","Missing Headers                   | More Information
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Content-Security-Policy           | https://owasp.org/www-project-secure-headers/#content-security-policy
+Cross-Origin-Embedder-Policy      | https://scotthelme.co.uk/coop-and-coep/, Note: This is an upcoming header
+Cross-Origin-Opener-Policy        | https://scotthelme.co.uk/coop-and-coep/, Note: This is an upcoming header
+Cross-Origin-Resource-Policy      | https://scotthelme.co.uk/coop-and-coep/, Note: This is an upcoming header
+Document-Policy                   | https://w3c.github.io/webappsec-feature-policy/document-policy#document-policy-http-header
+Feature-Policy                    | https://owasp.org/www-project-secure-headers/#feature-policy, Note: The Feature Policy header has been renamed to Permissions Policy
+Permissions-Policy                | https://w3c.github.io/webappsec-feature-policy/#permissions-policy-http-header-field
+Referrer-Policy                   | https://owasp.org/www-project-secure-headers/#referrer-policy
+Sec-Fetch-Dest                    | https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers#fetch_metadata_request_headers, Note: This is a new header supported only in newer browsers like e.g. Firefox 90
+Sec-Fetch-Mode                    | https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers#fetch_metadata_request_headers, Note: This is a new header supported only in newer browsers like e.g. Firefox 90
+Sec-Fetch-Site                    | https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers#fetch_metadata_request_headers, Note: This is a new header supported only in newer browsers like e.g. Firefox 90
+Sec-Fetch-User                    | https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers#fetch_metadata_request_headers, Note: This is a new header supported only in newer browsers like e.g. Firefox 90
+X-Content-Type-Options            | https://owasp.org/www-project-secure-headers/#x-content-type-options
+X-Frame-Options                   | https://owasp.org/www-project-secure-headers/#x-frame-options
+X-Permitted-Cross-Domain-Policies | https://owasp.org/www-project-secure-headers/#x-permitted-cross-domain-policies
+X-XSS-Protection                  | https://owasp.org/www-project-secure-headers/#x-xss-protection, Note: Most major browsers have dropped / deprecated support for this header in 2020.
+",1.3.6.1.4.1.25623.1.0.112081,"",f4c76f15-73fc-4a70-adb9-f2da935ace07,"E03-Escaneo-si084-lab",2026-09-02T21:30:47Z,103bb55a-21cf-4363-a2b0-cb16a57074c7,"","","","","
+Details:
+HTTP Security Headers Detection
+(OID: 1.3.6.1.4.1.25623.1.0.112081)
+Version used: 2025-03-21T15:40:43Z
+","","","",""
+172.18.0.3,si084_juiceshop.audit_net,3000,tcp,0.0,Log,80,"","HTTP Security Headers Detection","All known security headers are being checked on the remote web
+  server.
+
+  On completion a report will hand back whether a specific security header has been implemented
+  (including its value and if it is deprecated) or is missing on the target.","Header Name            | Header Value
+---------------------------------------
+Feature-Policy         | payment 'self'
+X-Content-Type-Options | nosniff
+X-Frame-Options        | SAMEORIGIN
+
+Missing Headers                   | More Information
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Content-Security-Policy           | https://owasp.org/www-project-secure-headers/#content-security-policy
+Cross-Origin-Embedder-Policy      | https://scotthelme.co.uk/coop-and-coep/, Note: This is an upcoming header
+Cross-Origin-Opener-Policy        | https://scotthelme.co.uk/coop-and-coep/, Note: This is an upcoming header
+Cross-Origin-Resource-Policy      | https://scotthelme.co.uk/coop-and-coep/, Note: This is an upcoming header
+Document-Policy                   | https://w3c.github.io/webappsec-feature-policy/document-policy#document-policy-http-header
+Permissions-Policy                | https://w3c.github.io/webappsec-feature-policy/#permissions-policy-http-header-field
+Referrer-Policy                   | https://owasp.org/www-project-secure-headers/#referrer-policy
+Sec-Fetch-Dest                    | https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers#fetch_metadata_request_headers, Note: This is a new header supported only in newer browsers like e.g. Firefox 90
+Sec-Fetch-Mode                    | https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers#fetch_metadata_request_headers, Note: This is a new header supported only in newer browsers like e.g. Firefox 90
+Sec-Fetch-Site                    | https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers#fetch_metadata_request_headers, Note: This is a new header supported only in newer browsers like e.g. Firefox 90
+Sec-Fetch-User                    | https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers#fetch_metadata_request_headers, Note: This is a new header supported only in newer browsers like e.g. Firefox 90
+X-Permitted-Cross-Domain-Policies | https://owasp.org/www-project-secure-headers/#x-permitted-cross-domain-policies
+X-XSS-Protection                  | https://owasp.org/www-project-secure-headers/#x-xss-protection, Note: Most major browsers have dropped / deprecated support for this header in 2020.
+",1.3.6.1.4.1.25623.1.0.112081,"",f4c76f15-73fc-4a70-adb9-f2da935ace07,"E03-Escaneo-si084-lab",2026-09-02T21:30:47Z,b90c8c31-8d45-4295-b9c9-cf426ab3a459,"","","","","
+Details:
+HTTP Security Headers Detection
+(OID: 1.3.6.1.4.1.25623.1.0.112081)
+Version used: 2025-03-21T15:40:43Z
+","","","",""
+172.18.0.2,si084_dvwa.audit_net,80,tcp,0.0,Log,80,"","HTTP Server Banner Enumeration","This script tries to detect / enumerate different HTTP server
+  banner (e.g. from a frontend, backend or proxy server) by sending various different HTTP requests
+  (valid and invalid ones).","It was possible to enumerate the following HTTP server banner(s):
+
+Server banner                  | Enumeration technique
+-------------------------------------------------------------------------------------------------
+Server: Apache/2.4.25 (Debian) | Invalid HTTP 00.5 GET request (non-existent HTTP version) to '/'
+",1.3.6.1.4.1.25623.1.0.108708,"",f4c76f15-73fc-4a70-adb9-f2da935ace07,"E03-Escaneo-si084-lab",2026-09-02T21:30:47Z,f6ae963a-aa3d-43de-b5ed-38f09dbc9913,"","","","","
+Details:
+HTTP Server Banner Enumeration
+(OID: 1.3.6.1.4.1.25623.1.0.108708)
+Version used: 2025-01-31T15:39:24Z
+","","","",""
+172.18.0.4,si084_portal.audit_net,80,tcp,0.0,Log,80,"","HTTP Server Banner Enumeration","This script tries to detect / enumerate different HTTP server
+  banner (e.g. from a frontend, backend or proxy server) by sending various different HTTP requests
+  (valid and invalid ones).","It was possible to enumerate the following HTTP server banner(s):
+
+Server banner        | Enumeration technique
+---------------------------------------------------------------------------------------
+Server: nginx/1.25.5 | Invalid HTTP 00.5 GET request (non-existent HTTP version) to '/'
+",1.3.6.1.4.1.25623.1.0.108708,"",f4c76f15-73fc-4a70-adb9-f2da935ace07,"E03-Escaneo-si084-lab",2026-09-02T21:30:47Z,c1d6bdce-aa27-4721-a617-ab9cb28f247f,"","","","","
+Details:
+HTTP Server Banner Enumeration
+(OID: 1.3.6.1.4.1.25623.1.0.108708)
+Version used: 2025-01-31T15:39:24Z
+","","","",""
+172.18.0.4,si084_portal.audit_net,80,tcp,0.0,Log,80,"","HTTP Server type and version","This script detects and reports the HTTP Server's banner
+  which might provide the type and version of it.","The remote HTTP Server banner is:
+
+Server: nginx/1.25.5
+",1.3.6.1.4.1.25623.1.0.10107,"",f4c76f15-73fc-4a70-adb9-f2da935ace07,"E03-Escaneo-si084-lab",2026-09-02T21:30:47Z,f9c48e8e-1943-48cc-87d2-a231cfcb32f0,"","","","","
+Details:
+HTTP Server type and version
+(OID: 1.3.6.1.4.1.25623.1.0.10107)
+Version used: 2023-08-01T13:29:10Z
+","","","",""
+172.18.0.2,si084_dvwa.audit_net,80,tcp,0.0,Log,80,"","HTTP Server type and version","This script detects and reports the HTTP Server's banner
+  which might provide the type and version of it.","The remote HTTP Server banner is:
+
+Server: Apache/2.4.25 (Debian)
+",1.3.6.1.4.1.25623.1.0.10107,"",f4c76f15-73fc-4a70-adb9-f2da935ace07,"E03-Escaneo-si084-lab",2026-09-02T21:30:47Z,cb668d71-e132-49c6-9bee-a44d4174eac8,"","","","","
+Details:
+HTTP Server type and version
+(OID: 1.3.6.1.4.1.25623.1.0.10107)
+Version used: 2023-08-01T13:29:10Z
+","","","",""
+172.18.0.3,si084_juiceshop.audit_net,,,2.1,Low,80,"Mitigation","ICMP Timestamp Reply Information Disclosure","The remote host responded to an ICMP timestamp request.","The following response / ICMP packet has been received:
+- ICMP Type: 14
+- ICMP Code: 0
+",1.3.6.1.4.1.25623.1.0.103190,"",f4c76f15-73fc-4a70-adb9-f2da935ace07,"E03-Escaneo-si084-lab",2026-09-02T21:30:47Z,14f495ec-6f36-4fe3-adbe-f35f70577312,"This information could theoretically be used to exploit weak
+  time-based random number generators in other services.","Various mitigations are possible:
+
+  - Disable the support for ICMP timestamp on the remote host completely
+
+  - Protect the remote host by a firewall, and block ICMP packets passing through the firewall in
+  either direction (either completely or only for untrusted networks)","","The Timestamp Reply is an ICMP message which replies to a
+  Timestamp message. It consists of the originating timestamp sent by the sender of the Timestamp as
+  well as a receive timestamp and a transmit timestamp.","Sends an ICMP Timestamp (Type 13) request and checks if a
+  Timestamp Reply (Type 14) is received.
+Details:
+ICMP Timestamp Reply Information Disclosure
+(OID: 1.3.6.1.4.1.25623.1.0.103190)
+Version used: 2025-01-21T05:37:33Z
+","","","DFN-CERT-2014-0658,CB-K15/1514,CB-K14/0632",""
+172.18.0.4,si084_portal.audit_net,,,2.1,Low,80,"Mitigation","ICMP Timestamp Reply Information Disclosure","The remote host responded to an ICMP timestamp request.","The following response / ICMP packet has been received:
+- ICMP Type: 14
+- ICMP Code: 0
+",1.3.6.1.4.1.25623.1.0.103190,"",f4c76f15-73fc-4a70-adb9-f2da935ace07,"E03-Escaneo-si084-lab",2026-09-02T21:30:47Z,e9e85f4d-98f2-42da-b5d5-31ef2cb29262,"This information could theoretically be used to exploit weak
+  time-based random number generators in other services.","Various mitigations are possible:
+
+  - Disable the support for ICMP timestamp on the remote host completely
+
+  - Protect the remote host by a firewall, and block ICMP packets passing through the firewall in
+  either direction (either completely or only for untrusted networks)","","The Timestamp Reply is an ICMP message which replies to a
+  Timestamp message. It consists of the originating timestamp sent by the sender of the Timestamp as
+  well as a receive timestamp and a transmit timestamp.","Sends an ICMP Timestamp (Type 13) request and checks if a
+  Timestamp Reply (Type 14) is received.
+Details:
+ICMP Timestamp Reply Information Disclosure
+(OID: 1.3.6.1.4.1.25623.1.0.103190)
+Version used: 2025-01-21T05:37:33Z
+","","","DFN-CERT-2014-0658,CB-K15/1514,CB-K14/0632",""
+172.18.0.5,si084_db.audit_net,,,2.1,Low,80,"Mitigation","ICMP Timestamp Reply Information Disclosure","The remote host responded to an ICMP timestamp request.","The following response / ICMP packet has been received:
+- ICMP Type: 14
+- ICMP Code: 0
+",1.3.6.1.4.1.25623.1.0.103190,"",f4c76f15-73fc-4a70-adb9-f2da935ace07,"E03-Escaneo-si084-lab",2026-09-02T21:30:47Z,e1a66ade-166f-485c-8b12-eac8a7f27b73,"This information could theoretically be used to exploit weak
+  time-based random number generators in other services.","Various mitigations are possible:
+
+  - Disable the support for ICMP timestamp on the remote host completely
+
+  - Protect the remote host by a firewall, and block ICMP packets passing through the firewall in
+  either direction (either completely or only for untrusted networks)","","The Timestamp Reply is an ICMP message which replies to a
+  Timestamp message. It consists of the originating timestamp sent by the sender of the Timestamp as
+  well as a receive timestamp and a transmit timestamp.","Sends an ICMP Timestamp (Type 13) request and checks if a
+  Timestamp Reply (Type 14) is received.
+Details:
+ICMP Timestamp Reply Information Disclosure
+(OID: 1.3.6.1.4.1.25623.1.0.103190)
+Version used: 2025-01-21T05:37:33Z
+","","","DFN-CERT-2014-0658,CB-K15/1514,CB-K14/0632",""
+172.18.0.2,si084_dvwa.audit_net,,,2.1,Low,80,"Mitigation","ICMP Timestamp Reply Information Disclosure","The remote host responded to an ICMP timestamp request.","The following response / ICMP packet has been received:
+- ICMP Type: 14
+- ICMP Code: 0
+",1.3.6.1.4.1.25623.1.0.103190,"",f4c76f15-73fc-4a70-adb9-f2da935ace07,"E03-Escaneo-si084-lab",2026-09-02T21:30:47Z,2d56a76d-3b5d-4370-9a57-4f7a370998d1,"This information could theoretically be used to exploit weak
+  time-based random number generators in other services.","Various mitigations are possible:
+
+  - Disable the support for ICMP timestamp on the remote host completely
+
+  - Protect the remote host by a firewall, and block ICMP packets passing through the firewall in
+  either direction (either completely or only for untrusted networks)","","The Timestamp Reply is an ICMP message which replies to a
+  Timestamp message. It consists of the originating timestamp sent by the sender of the Timestamp as
+  well as a receive timestamp and a transmit timestamp.","Sends an ICMP Timestamp (Type 13) request and checks if a
+  Timestamp Reply (Type 14) is received.
+Details:
+ICMP Timestamp Reply Information Disclosure
+(OID: 1.3.6.1.4.1.25623.1.0.103190)
+Version used: 2025-01-21T05:37:33Z
+","","","DFN-CERT-2014-0658,CB-K15/1514,CB-K14/0632",""
+172.18.0.3,si084_juiceshop.audit_net,,,0.0,Log,70,"","IP Forwarding Enabled - Active Check","Checks if the remote host has IP forwarding enabled.","It was possible to route a TCP packet through the target host and received an answer which means IP forwarding is enabled.
+",1.3.6.1.4.1.25623.1.0.147205,"",f4c76f15-73fc-4a70-adb9-f2da935ace07,"E03-Escaneo-si084-lab",2026-09-02T21:30:47Z,f454a71b-258d-4029-ad95-11a8175e3495,"","","","","Sends a crafted Local Link Layer (LLL) frame and checks the
+  response.
+Details:
+IP Forwarding Enabled - Active Check
+(OID: 1.3.6.1.4.1.25623.1.0.147205)
+Version used: 2021-12-03T08:27:06Z
+","","","",""
+172.18.0.5,si084_db.audit_net,,,0.0,Log,70,"","IP Forwarding Enabled - Active Check","Checks if the remote host has IP forwarding enabled.","It was possible to route a TCP packet through the target host and received an answer which means IP forwarding is enabled.
+",1.3.6.1.4.1.25623.1.0.147205,"",f4c76f15-73fc-4a70-adb9-f2da935ace07,"E03-Escaneo-si084-lab",2026-09-02T21:30:47Z,ff93049f-237b-4189-b016-77319732ab9a,"","","","","Sends a crafted Local Link Layer (LLL) frame and checks the
+  response.
+Details:
+IP Forwarding Enabled - Active Check
+(OID: 1.3.6.1.4.1.25623.1.0.147205)
+Version used: 2021-12-03T08:27:06Z
+","","","",""
+172.18.0.4,si084_portal.audit_net,,,0.0,Log,70,"","IP Forwarding Enabled - Active Check","Checks if the remote host has IP forwarding enabled.","It was possible to route a TCP packet through the target host and received an answer which means IP forwarding is enabled.
+",1.3.6.1.4.1.25623.1.0.147205,"",f4c76f15-73fc-4a70-adb9-f2da935ace07,"E03-Escaneo-si084-lab",2026-09-02T21:30:47Z,be514ceb-e7c3-490b-83ba-bbf172d2dc7e,"","","","","Sends a crafted Local Link Layer (LLL) frame and checks the
+  response.
+Details:
+IP Forwarding Enabled - Active Check
+(OID: 1.3.6.1.4.1.25623.1.0.147205)
+Version used: 2021-12-03T08:27:06Z
+","","","",""
+172.18.0.2,si084_dvwa.audit_net,,,0.0,Log,70,"","IP Forwarding Enabled - Active Check","Checks if the remote host has IP forwarding enabled.","It was possible to route a TCP packet through the target host and received an answer which means IP forwarding is enabled.
+",1.3.6.1.4.1.25623.1.0.147205,"",f4c76f15-73fc-4a70-adb9-f2da935ace07,"E03-Escaneo-si084-lab",2026-09-02T21:30:47Z,81f4c5aa-a2f4-46d1-8c5d-6e687e1c22a2,"","","","","Sends a crafted Local Link Layer (LLL) frame and checks the
+  response.
+Details:
+IP Forwarding Enabled - Active Check
+(OID: 1.3.6.1.4.1.25623.1.0.147205)
+Version used: 2021-12-03T08:27:06Z
+","","","",""
+172.18.0.5,si084_db.audit_net,3306,tcp,0.0,Log,80,"","MariaDB / Oracle MySQL Detection (MySQL Protocol)","MySQL protocol-based detection of MariaDB / Oracle MySQL.","Detected Oracle MySQL
+
+Version:       8.0.46
+Location:      3306/tcp
+CPE:           cpe:/a:oracle:mysql:8.0.46
+
+Concluded from version/product identification result:
+8.0.46
+",1.3.6.1.4.1.25623.1.0.100152,"",f4c76f15-73fc-4a70-adb9-f2da935ace07,"E03-Escaneo-si084-lab",2026-09-02T21:30:47Z,52657c8a-3ce4-4669-9853-4d892084781c,"","","","","
+Details:
+MariaDB / Oracle MySQL Detection (MySQL Protocol)
+(OID: 1.3.6.1.4.1.25623.1.0.100152)
+Version used: 2025-09-09T05:38:49Z
+","","","",""
+172.18.0.4,si084_portal.audit_net,,,0.0,Log,80,"","nginx Detection Consolidation","Consolidation of Nginx detections.","Detected Nginx
+
+Version:       1.25.5
+Location:      80/tcp
+CPE:           cpe:/a:nginx:nginx:1.25.5
+
+Concluded from version/product identification result:
+Server: nginx/1.25.5
+",1.3.6.1.4.1.25623.1.0.113787,"",f4c76f15-73fc-4a70-adb9-f2da935ace07,"E03-Escaneo-si084-lab",2026-09-02T21:30:47Z,8be1e712-3beb-45cc-abd1-fd4d76e889a6,"","","","","
+Details:
+nginx Detection Consolidation
+(OID: 1.3.6.1.4.1.25623.1.0.113787)
+Version used: 2026-06-18T07:15:20Z
+","","","",""
+172.18.0.2,si084_dvwa.audit_net,,,10.0,Critical,80,"Mitigation","Operating System (OS) End of Life (EOL) Detection","The Operating System (OS) on the remote host has reached the end
+  of life (EOL) and should not be used anymore.","The ""Debian GNU/Linux"" Operating System on the remote host has reached the end of life.
+
+CPE:               cpe:/o:debian:debian_linux:9
+Installed version,
+build or SP:       9
+EOL date:          2022-06-30
+EOL info:          https://en.wikipedia.org/wiki/List_of_Debian_releases#Release_table
+",1.3.6.1.4.1.25623.1.0.103674,"",f4c76f15-73fc-4a70-adb9-f2da935ace07,"E03-Escaneo-si084-lab",2026-09-02T21:30:47Z,5989b9b7-63c7-4c8e-867b-c8a7544db8ab,"An EOL version of an OS is not receiving any security updates
+  from the vendor. Unfixed security vulnerabilities might be leveraged by an attacker to compromise
+  the security of this host.","Update the OS on the remote host to a version which is still
+  supported and receiving security updates by the vendor.
+
+  Note / Important: Please create an override for this result if the target host is a:
+
+  - Windows system with Extended Security Updates (ESU)
+
+  - System with additional 3rd-party / non-vendor security updates like e.g. from 'TuxCare',
+  'Freexian Extended LTS' or similar","","","Checks if an EOL version of an OS is present on the target
+  host.
+Details:
+Operating System (OS) End of Life (EOL) Detection
+(OID: 1.3.6.1.4.1.25623.1.0.103674)
+Version used: 2025-05-21T05:40:19Z
+","Product: cpe:/o:debian:debian_linux:9
+Method: OS Detection Consolidation and Reporting
+(OID: 1.3.6.1.4.1.25623.1.0.105937)
+","","",""
+172.18.0.5,si084_db.audit_net,,,0.0,Log,80,"","OS Detection Consolidation and Reporting","This script consolidates the OS information detected by several
+  VTs and tries to find the best matching OS.
+
+  Furthermore it reports all previously collected information leading to this best matching OS. It
+  also reports possible additional information which might help to improve the OS detection.
+
+  If any of this information is wrong or could be improved please consider to report these to the
+  referenced community forum.","Best matching OS:
+
+OS:           Linux Kernel
+CPE:          cpe:/o:linux:kernel
+Found by VT:  1.3.6.1.4.1.25623.1.0.102002 (Operating System (OS) Detection (ICMP))
+Concluded from ICMP based OS fingerprint
+Setting key ""Host/runs_unixoide"" based on this information
+",1.3.6.1.4.1.25623.1.0.105937,"",f4c76f15-73fc-4a70-adb9-f2da935ace07,"E03-Escaneo-si084-lab",2026-09-02T21:30:47Z,259f6cec-bd9a-466e-a152-869fed665a0d,"","","","","
+Details:
+OS Detection Consolidation and Reporting
+(OID: 1.3.6.1.4.1.25623.1.0.105937)
+Version used: 2026-09-02T05:46:18Z
+","","","",""
+172.18.0.2,si084_dvwa.audit_net,,,0.0,Log,80,"","OS Detection Consolidation and Reporting","This script consolidates the OS information detected by several
+  VTs and tries to find the best matching OS.
+
+  Furthermore it reports all previously collected information leading to this best matching OS. It
+  also reports possible additional information which might help to improve the OS detection.
+
+  If any of this information is wrong or could be improved please consider to report these to the
+  referenced community forum.","Best matching OS:
+
+OS:           Debian GNU/Linux 9
+Version:      9
+CPE:          cpe:/o:debian:debian_linux:9
+Found by VT:  1.3.6.1.4.1.25623.1.0.111067 (Operating System (OS) Detection (HTTP))
+Concluded from HTTP Server banner on port 80/tcp: Server: Apache/2.4.25 (Debian)
+Setting key ""Host/runs_unixoide"" based on this information
+",1.3.6.1.4.1.25623.1.0.105937,"",f4c76f15-73fc-4a70-adb9-f2da935ace07,"E03-Escaneo-si084-lab",2026-09-02T21:30:47Z,a1fbc0d0-c757-4257-8c9d-f7146dde86c0,"","","","","
+Details:
+OS Detection Consolidation and Reporting
+(OID: 1.3.6.1.4.1.25623.1.0.105937)
+Version used: 2026-09-02T05:46:18Z
+","","","",""
+172.18.0.4,si084_portal.audit_net,,,0.0,Log,80,"","OS Detection Consolidation and Reporting","This script consolidates the OS information detected by several
+  VTs and tries to find the best matching OS.
+
+  Furthermore it reports all previously collected information leading to this best matching OS. It
+  also reports possible additional information which might help to improve the OS detection.
+
+  If any of this information is wrong or could be improved please consider to report these to the
+  referenced community forum.","Best matching OS:
+
+OS:           Linux Kernel
+CPE:          cpe:/o:linux:kernel
+Found by VT:  1.3.6.1.4.1.25623.1.0.102002 (Operating System (OS) Detection (ICMP))
+Concluded from ICMP based OS fingerprint
+Setting key ""Host/runs_unixoide"" based on this information
+",1.3.6.1.4.1.25623.1.0.105937,"",f4c76f15-73fc-4a70-adb9-f2da935ace07,"E03-Escaneo-si084-lab",2026-09-02T21:30:47Z,e051faf2-5e90-4f3b-8727-407b4759521a,"","","","","
+Details:
+OS Detection Consolidation and Reporting
+(OID: 1.3.6.1.4.1.25623.1.0.105937)
+Version used: 2026-09-02T05:46:18Z
+","","","",""
+172.18.0.3,si084_juiceshop.audit_net,,,0.0,Log,80,"","OS Detection Consolidation and Reporting","This script consolidates the OS information detected by several
+  VTs and tries to find the best matching OS.
+
+  Furthermore it reports all previously collected information leading to this best matching OS. It
+  also reports possible additional information which might help to improve the OS detection.
+
+  If any of this information is wrong or could be improved please consider to report these to the
+  referenced community forum.","Best matching OS:
+
+OS:           Linux Kernel
+CPE:          cpe:/o:linux:kernel
+Found by VT:  1.3.6.1.4.1.25623.1.0.102002 (Operating System (OS) Detection (ICMP))
+Concluded from ICMP based OS fingerprint
+Setting key ""Host/runs_unixoide"" based on this information
+",1.3.6.1.4.1.25623.1.0.105937,"",f4c76f15-73fc-4a70-adb9-f2da935ace07,"E03-Escaneo-si084-lab",2026-09-02T21:30:47Z,04f10f82-15f1-4987-9bda-5bbd5baca8dc,"","","","","
+Details:
+OS Detection Consolidation and Reporting
+(OID: 1.3.6.1.4.1.25623.1.0.105937)
+Version used: 2026-09-02T05:46:18Z
+","","","",""
+172.18.0.3,si084_juiceshop.audit_net,3000,tcp,0.0,Log,80,"","Response Time / No 404 Error Code Check","This VT tests if the remote web server does not reply with a 404
+  error code and checks if it is replying to the scanners requests in a reasonable amount of time.","The service is responding with a 200 HTTP status code to non-existent files/urls. The following pattern is used to work around possible false detections:
+-----
+404
+-----
+",1.3.6.1.4.1.25623.1.0.10386,"",f4c76f15-73fc-4a70-adb9-f2da935ace07,"E03-Escaneo-si084-lab",2026-09-02T21:30:47Z,5e775f48-f78c-4898-a445-0c89c4fb4799,"","","","This web server might show the following issues:
+
+  - it is [mis]configured in that it does not return '404 Not Found' error codes when a non-existent
+  file is requested, perhaps returning a site map, search page, authentication page or redirect instead.
+
+  The Scanner might enabled some counter measures for that, however they might be insufficient. If a
+  great number of security issues are reported for this port, they might not all be accurate.
+
+  - it doesn't response in a reasonable amount of time to various HTTP requests sent by this VT.
+
+  In order to keep the scan total time to a reasonable amount, the remote web server might not be
+  tested. If the remote server should be tested it has to be fixed to have it reply to the scanners
+  requests in a reasonable amount of time.
+
+  Alternatively the 'Maximum response time (in seconds)' preference could be raised to a higher
+  value if longer scan times are accepted.","
+Details:
+Response Time / No 404 Error Code Check
+(OID: 1.3.6.1.4.1.25623.1.0.10386)
+Version used: 2025-04-11T15:45:04Z
+","","","",""
+172.18.0.3,si084_juiceshop.audit_net,3000,tcp,0.0,Log,80,"Mitigation","robot.txt / robots.txt exists on the Web Server (HTTP)","Web Servers can use a file called /robot(s).txt to ask search engines
+  to ignore certain files and directories. By nature this file can not be used to protect private files
+  from public read access.","The file 'http://si084_juiceshop.audit_net:3000/robots.txt' contains the following:
+
+User-agent: *
+Disallow: /ftp
+",1.3.6.1.4.1.25623.1.0.10302,"",f4c76f15-73fc-4a70-adb9-f2da935ace07,"E03-Escaneo-si084-lab",2026-09-02T21:30:47Z,8e23553e-ab24-47c1-ad4b-fe34e4291cfd,"","Review the content of the /robot(s).txt file and consider removing the
+  files from the server or protect them in other ways in case you actually intended non-public availability.","","Any serious web search engine will honor the /robot(s).txt file
+  and not scan the files and directories listed there.
+
+  Any entries listed in this file are not even hidden anymore.","
+Details:
+robot.txt / robots.txt exists on the Web Server (HTTP)
+(OID: 1.3.6.1.4.1.25623.1.0.10302)
+Version used: 2024-02-26T14:36:40Z
+","","","",""
+172.18.0.3,si084_juiceshop.audit_net,3000,tcp,0.0,Log,80,"","security.txt Detection (HTTP)","Detects a security.txt endpoint.","The file 'http://si084_juiceshop.audit_net:3000/.well-known/security.txt' contains the following:
+
+Contact: mailto:donotreply@owasp-juice.shop
+Encryption: https://keybase.io/bkimminich/pgp_keys.asc?fingerprint=19c01cb7157e4645e9e2c863062a85a8cbfbdcda
+Acknowledgements: /#/score-board
+Preferred-languages: en, ar, az, bg, bn, ca, cs, da, de, ga, el, es, et, fi, fr, ka, he, hi, hu, id, it, ja, ko, lv, my, nl, no, pl, pt, ro, ru, si, sv, th, tr, uk, zh
+Hiring: /#/jobs
+Csaf: http://localhost:3000/.well-known/csaf/provider-metadata.json
+Expires: Thu, 02 Sep 2027 20:49:02 GMT
+",1.3.6.1.4.1.25623.1.0.102093,"",f4c76f15-73fc-4a70-adb9-f2da935ace07,"E03-Escaneo-si084-lab",2026-09-02T21:30:47Z,25c88997-3991-4ece-8128-5a2e36a7c238,"","","","The security.txt endpoint enables website operators to publish
+  contact information, disclosure policies, and other security-related information for security
+  researchers.","Sends HTTP GET requests to '/.well-known/security.txt' and
+  '/security.txt' (legacy compatibility) to determine whether a security.txt endpoint is exposed by
+  the target web server. If both endpoints are present, the standardized '/.well-known/security.txt'
+  endpoint is reported.
+Details:
+security.txt Detection (HTTP)
+(OID: 1.3.6.1.4.1.25623.1.0.102093)
+Version used: 2026-07-17T16:01:51Z
+","","","",""
+172.18.0.3,si084_juiceshop.audit_net,3000,tcp,0.0,Log,80,"","Services","This plugin performs service detection.","A web server is running on this port
+",1.3.6.1.4.1.25623.1.0.10330,"",f4c76f15-73fc-4a70-adb9-f2da935ace07,"E03-Escaneo-si084-lab",2026-09-02T21:30:47Z,354ce86d-27ba-429e-897f-3559d4889b8d,"","","","This plugin attempts to guess which service is running on the
+  remote port(s). For instance, it searches for a web server which could listen on another port than
+  80 or 443 and makes this information available for other check routines.","
+Details:
+Services
+(OID: 1.3.6.1.4.1.25623.1.0.10330)
+Version used: 2025-03-05T05:38:53Z
+","","","",""
+172.18.0.4,si084_portal.audit_net,80,tcp,0.0,Log,80,"","Services","This plugin performs service detection.","A web server is running on this port
+",1.3.6.1.4.1.25623.1.0.10330,"",f4c76f15-73fc-4a70-adb9-f2da935ace07,"E03-Escaneo-si084-lab",2026-09-02T21:30:47Z,251c5e52-fe62-43d7-8795-342d0c3d9994,"","","","This plugin attempts to guess which service is running on the
+  remote port(s). For instance, it searches for a web server which could listen on another port than
+  80 or 443 and makes this information available for other check routines.","
+Details:
+Services
+(OID: 1.3.6.1.4.1.25623.1.0.10330)
+Version used: 2025-03-05T05:38:53Z
+","","","",""
+172.18.0.2,si084_dvwa.audit_net,80,tcp,0.0,Log,80,"","Services","This plugin performs service detection.","A web server is running on this port
+",1.3.6.1.4.1.25623.1.0.10330,"",f4c76f15-73fc-4a70-adb9-f2da935ace07,"E03-Escaneo-si084-lab",2026-09-02T21:30:47Z,6b7b94e0-ee90-48d6-95bb-5c0bb9509860,"","","","This plugin attempts to guess which service is running on the
+  remote port(s). For instance, it searches for a web server which could listen on another port than
+  80 or 443 and makes this information available for other check routines.","
+Details:
+Services
+(OID: 1.3.6.1.4.1.25623.1.0.10330)
+Version used: 2025-03-05T05:38:53Z
+","","","",""
+172.18.0.5,si084_db.audit_net,33060,tcp,0.0,Log,80,"","Services","This plugin performs service detection.","A SOCKS5 proxy is running on this port. 
+",1.3.6.1.4.1.25623.1.0.10330,"",f4c76f15-73fc-4a70-adb9-f2da935ace07,"E03-Escaneo-si084-lab",2026-09-02T21:30:47Z,cfabeced-f37c-4ed3-baa1-eddbdf3c7652,"","","","This plugin attempts to guess which service is running on the
+  remote port(s). For instance, it searches for a web server which could listen on another port than
+  80 or 443 and makes this information available for other check routines.","
+Details:
+Services
+(OID: 1.3.6.1.4.1.25623.1.0.10330)
+Version used: 2025-03-05T05:38:53Z
+","","","",""
+172.18.0.5,si084_db.audit_net,3306,tcp,0.0,Log,80,"","Services","This plugin performs service detection.","An unknown service is running on this port.
+It is usually reserved for MySQL/MariaDB
+",1.3.6.1.4.1.25623.1.0.10330,"",f4c76f15-73fc-4a70-adb9-f2da935ace07,"E03-Escaneo-si084-lab",2026-09-02T21:30:47Z,c74b766c-8935-4277-85dc-4230c863a14b,"","","","This plugin attempts to guess which service is running on the
+  remote port(s). For instance, it searches for a web server which could listen on another port than
+  80 or 443 and makes this information available for other check routines.","
+Details:
+Services
+(OID: 1.3.6.1.4.1.25623.1.0.10330)
+Version used: 2025-03-05T05:38:53Z
+","","","",""
+172.18.0.3,si084_juiceshop.audit_net,22,tcp,0.0,Log,80,"","SSH Authorization Check","This script tries to login with provided credentials.
+
+  If the login was successful, it marks this port as available for any authenticated tests.","It was not possible to login using the provided SSH credentials. Hence authenticated checks are not enabled.
+",1.3.6.1.4.1.25623.1.0.90022,"",f4c76f15-73fc-4a70-adb9-f2da935ace07,"E03-Escaneo-si084-lab",2026-09-02T21:30:47Z,868e95d6-d7c4-480a-a6e1-d5bf61025583,"","","","","
+Details:
+SSH Authorization Check
+(OID: 1.3.6.1.4.1.25623.1.0.90022)
+Version used: 2023-07-28T16:09:07Z
+","","","",""
+172.18.0.4,si084_portal.audit_net,22,tcp,0.0,Log,80,"","SSH Authorization Check","This script tries to login with provided credentials.
+
+  If the login was successful, it marks this port as available for any authenticated tests.","It was not possible to login using the provided SSH credentials. Hence authenticated checks are not enabled.
+",1.3.6.1.4.1.25623.1.0.90022,"",f4c76f15-73fc-4a70-adb9-f2da935ace07,"E03-Escaneo-si084-lab",2026-09-02T21:30:47Z,85f1bbcf-eeb4-4190-8669-5e42090db383,"","","","","
+Details:
+SSH Authorization Check
+(OID: 1.3.6.1.4.1.25623.1.0.90022)
+Version used: 2023-07-28T16:09:07Z
+","","","",""
+172.18.0.5,si084_db.audit_net,22,tcp,0.0,Log,80,"","SSH Authorization Check","This script tries to login with provided credentials.
+
+  If the login was successful, it marks this port as available for any authenticated tests.","It was not possible to login using the provided SSH credentials. Hence authenticated checks are not enabled.
+",1.3.6.1.4.1.25623.1.0.90022,"",f4c76f15-73fc-4a70-adb9-f2da935ace07,"E03-Escaneo-si084-lab",2026-09-02T21:30:47Z,2b6b8f2b-684b-445f-941b-859d5e4aef51,"","","","","
+Details:
+SSH Authorization Check
+(OID: 1.3.6.1.4.1.25623.1.0.90022)
+Version used: 2023-07-28T16:09:07Z
+","","","",""
+172.18.0.2,si084_dvwa.audit_net,22,tcp,0.0,Log,80,"","SSH Authorization Check","This script tries to login with provided credentials.
+
+  If the login was successful, it marks this port as available for any authenticated tests.","It was not possible to login using the provided SSH credentials. Hence authenticated checks are not enabled.
+",1.3.6.1.4.1.25623.1.0.90022,"",f4c76f15-73fc-4a70-adb9-f2da935ace07,"E03-Escaneo-si084-lab",2026-09-02T21:30:47Z,f4feea27-bc67-4ec6-9dbd-3b7235decccd,"","","","","
+Details:
+SSH Authorization Check
+(OID: 1.3.6.1.4.1.25623.1.0.90022)
+Version used: 2023-07-28T16:09:07Z
+","","","",""
+172.18.0.4,si084_portal.audit_net,22,tcp,0.0,Log,80,"","SSH Login Failed For Authenticated Checks","It was NOT possible to login using the provided SSH
+  credentials. Hence authenticated checks are NOT enabled.","It was not possible to login using the provided SSH credentials. Hence authenticated checks are not enabled.
+
+If the SSH credentials are correct the login might have failed because of the following reasons:
+
+- The password of the provided SSH credentials has expired and the user is required to change it before a login is possible again.
+",1.3.6.1.4.1.25623.1.0.105936,"",f4c76f15-73fc-4a70-adb9-f2da935ace07,"E03-Escaneo-si084-lab",2026-09-02T21:30:47Z,91a8d54a-454a-4482-86d9-5c889b557454,"","Recheck the SSH credentials for authenticated checks or
+  evaluate the script output for the required algorithms on the remote SSH server or the scanner.","","","
+Details:
+SSH Login Failed For Authenticated Checks
+(OID: 1.3.6.1.4.1.25623.1.0.105936)
+Version used: 2026-05-22T06:54:41Z
+","","","",""
+172.18.0.5,si084_db.audit_net,22,tcp,0.0,Log,80,"","SSH Login Failed For Authenticated Checks","It was NOT possible to login using the provided SSH
+  credentials. Hence authenticated checks are NOT enabled.","It was not possible to login using the provided SSH credentials. Hence authenticated checks are not enabled.
+
+If the SSH credentials are correct the login might have failed because of the following reasons:
+
+- The password of the provided SSH credentials has expired and the user is required to change it before a login is possible again.
+",1.3.6.1.4.1.25623.1.0.105936,"",f4c76f15-73fc-4a70-adb9-f2da935ace07,"E03-Escaneo-si084-lab",2026-09-02T21:30:47Z,db2333fd-8811-445a-90dc-350c2aa5bc85,"","Recheck the SSH credentials for authenticated checks or
+  evaluate the script output for the required algorithms on the remote SSH server or the scanner.","","","
+Details:
+SSH Login Failed For Authenticated Checks
+(OID: 1.3.6.1.4.1.25623.1.0.105936)
+Version used: 2026-05-22T06:54:41Z
+","","","",""
+172.18.0.2,si084_dvwa.audit_net,22,tcp,0.0,Log,80,"","SSH Login Failed For Authenticated Checks","It was NOT possible to login using the provided SSH
+  credentials. Hence authenticated checks are NOT enabled.","It was not possible to login using the provided SSH credentials. Hence authenticated checks are not enabled.
+
+If the SSH credentials are correct the login might have failed because of the following reasons:
+
+- The password of the provided SSH credentials has expired and the user is required to change it before a login is possible again.
+",1.3.6.1.4.1.25623.1.0.105936,"",f4c76f15-73fc-4a70-adb9-f2da935ace07,"E03-Escaneo-si084-lab",2026-09-02T21:30:47Z,6835495b-284e-47c7-b2ff-7d4a12dab387,"","Recheck the SSH credentials for authenticated checks or
+  evaluate the script output for the required algorithms on the remote SSH server or the scanner.","","","
+Details:
+SSH Login Failed For Authenticated Checks
+(OID: 1.3.6.1.4.1.25623.1.0.105936)
+Version used: 2026-05-22T06:54:41Z
+","","","",""
+172.18.0.3,si084_juiceshop.audit_net,22,tcp,0.0,Log,80,"","SSH Login Failed For Authenticated Checks","It was NOT possible to login using the provided SSH
+  credentials. Hence authenticated checks are NOT enabled.","It was not possible to login using the provided SSH credentials. Hence authenticated checks are not enabled.
+
+If the SSH credentials are correct the login might have failed because of the following reasons:
+
+- The password of the provided SSH credentials has expired and the user is required to change it before a login is possible again.
+",1.3.6.1.4.1.25623.1.0.105936,"",f4c76f15-73fc-4a70-adb9-f2da935ace07,"E03-Escaneo-si084-lab",2026-09-02T21:30:47Z,478df973-fe09-45e7-ad85-7a125dccedbe,"","Recheck the SSH credentials for authenticated checks or
+  evaluate the script output for the required algorithms on the remote SSH server or the scanner.","","","
+Details:
+SSH Login Failed For Authenticated Checks
+(OID: 1.3.6.1.4.1.25623.1.0.105936)
+Version used: 2026-05-22T06:54:41Z
+","","","",""
+172.18.0.3,si084_juiceshop.audit_net,,,2.6,Low,80,"Mitigation","TCP Timestamps Information Disclosure","The remote host implements TCP timestamps and therefore allows
+  to compute the uptime.","It was detected that the host implements RFC1323/RFC7323.
+
+The following timestamps were retrieved with a delay of 1 seconds in-between:
+Packet 1: 2464780289
+Packet 2: 3536061406
+",1.3.6.1.4.1.25623.1.0.80091,"",f4c76f15-73fc-4a70-adb9-f2da935ace07,"E03-Escaneo-si084-lab",2026-09-02T21:30:47Z,915931c1-8d87-42f7-9588-22fa5c1da841,"A side effect of this feature is that the uptime of the remote
+  host can sometimes be computed.","To disable TCP timestamps on linux add the line
+  'net.ipv4.tcp_timestamps = 0' to /etc/sysctl.conf. Execute 'sysctl -p' to apply the settings at
+  runtime.
+
+  To disable TCP timestamps on Windows execute 'netsh int tcp set global timestamps=disabled'
+
+  Starting with Windows Server 2008 and Vista, the timestamp can not be completely disabled.
+
+  The default behavior of the TCP/IP stack on this Systems is to not use the Timestamp options when
+  initiating TCP connections, but use them if the TCP peer that is initiating communication includes
+  them in their synchronize (SYN) segment.
+
+  See the references for more information.","TCP implementations that implement RFC1323/RFC7323.","The remote host implements TCP timestamps, as defined by
+  RFC1323/RFC7323.","Special IP packets are forged and sent with a little delay in
+  between to the target IP. The responses are searched for a timestamps. If found, the timestamps
+  are reported.
+Details:
+TCP Timestamps Information Disclosure
+(OID: 1.3.6.1.4.1.25623.1.0.80091)
+Version used: 2023-12-15T16:10:08Z
+","","","",""
+172.18.0.2,si084_dvwa.audit_net,,,2.6,Low,80,"Mitigation","TCP Timestamps Information Disclosure","The remote host implements TCP timestamps and therefore allows
+  to compute the uptime.","It was detected that the host implements RFC1323/RFC7323.
+
+The following timestamps were retrieved with a delay of 1 seconds in-between:
+Packet 1: 3123935541
+Packet 2: 1246195839
+",1.3.6.1.4.1.25623.1.0.80091,"",f4c76f15-73fc-4a70-adb9-f2da935ace07,"E03-Escaneo-si084-lab",2026-09-02T21:30:47Z,10cbbf83-70b6-4877-8aec-21f8fd9bdfed,"A side effect of this feature is that the uptime of the remote
+  host can sometimes be computed.","To disable TCP timestamps on linux add the line
+  'net.ipv4.tcp_timestamps = 0' to /etc/sysctl.conf. Execute 'sysctl -p' to apply the settings at
+  runtime.
+
+  To disable TCP timestamps on Windows execute 'netsh int tcp set global timestamps=disabled'
+
+  Starting with Windows Server 2008 and Vista, the timestamp can not be completely disabled.
+
+  The default behavior of the TCP/IP stack on this Systems is to not use the Timestamp options when
+  initiating TCP connections, but use them if the TCP peer that is initiating communication includes
+  them in their synchronize (SYN) segment.
+
+  See the references for more information.","TCP implementations that implement RFC1323/RFC7323.","The remote host implements TCP timestamps, as defined by
+  RFC1323/RFC7323.","Special IP packets are forged and sent with a little delay in
+  between to the target IP. The responses are searched for a timestamps. If found, the timestamps
+  are reported.
+Details:
+TCP Timestamps Information Disclosure
+(OID: 1.3.6.1.4.1.25623.1.0.80091)
+Version used: 2023-12-15T16:10:08Z
+","","","",""
+172.18.0.4,si084_portal.audit_net,,,2.6,Low,80,"Mitigation","TCP Timestamps Information Disclosure","The remote host implements TCP timestamps and therefore allows
+  to compute the uptime.","It was detected that the host implements RFC1323/RFC7323.
+
+The following timestamps were retrieved with a delay of 1 seconds in-between:
+Packet 1: 25236354
+Packet 2: 1755723615
+",1.3.6.1.4.1.25623.1.0.80091,"",f4c76f15-73fc-4a70-adb9-f2da935ace07,"E03-Escaneo-si084-lab",2026-09-02T21:30:47Z,71c5edfb-b89b-41fe-a0a3-61bc8520a463,"A side effect of this feature is that the uptime of the remote
+  host can sometimes be computed.","To disable TCP timestamps on linux add the line
+  'net.ipv4.tcp_timestamps = 0' to /etc/sysctl.conf. Execute 'sysctl -p' to apply the settings at
+  runtime.
+
+  To disable TCP timestamps on Windows execute 'netsh int tcp set global timestamps=disabled'
+
+  Starting with Windows Server 2008 and Vista, the timestamp can not be completely disabled.
+
+  The default behavior of the TCP/IP stack on this Systems is to not use the Timestamp options when
+  initiating TCP connections, but use them if the TCP peer that is initiating communication includes
+  them in their synchronize (SYN) segment.
+
+  See the references for more information.","TCP implementations that implement RFC1323/RFC7323.","The remote host implements TCP timestamps, as defined by
+  RFC1323/RFC7323.","Special IP packets are forged and sent with a little delay in
+  between to the target IP. The responses are searched for a timestamps. If found, the timestamps
+  are reported.
+Details:
+TCP Timestamps Information Disclosure
+(OID: 1.3.6.1.4.1.25623.1.0.80091)
+Version used: 2023-12-15T16:10:08Z
+","","","",""
+172.18.0.5,si084_db.audit_net,,,2.6,Low,80,"Mitigation","TCP Timestamps Information Disclosure","The remote host implements TCP timestamps and therefore allows
+  to compute the uptime.","It was detected that the host implements RFC1323/RFC7323.
+
+The following timestamps were retrieved with a delay of 1 seconds in-between:
+Packet 1: 1310314958
+Packet 2: 473735584
+",1.3.6.1.4.1.25623.1.0.80091,"",f4c76f15-73fc-4a70-adb9-f2da935ace07,"E03-Escaneo-si084-lab",2026-09-02T21:30:47Z,46d64363-9d65-4f7e-8fe9-dbb80759f955,"A side effect of this feature is that the uptime of the remote
+  host can sometimes be computed.","To disable TCP timestamps on linux add the line
+  'net.ipv4.tcp_timestamps = 0' to /etc/sysctl.conf. Execute 'sysctl -p' to apply the settings at
+  runtime.
+
+  To disable TCP timestamps on Windows execute 'netsh int tcp set global timestamps=disabled'
+
+  Starting with Windows Server 2008 and Vista, the timestamp can not be completely disabled.
+
+  The default behavior of the TCP/IP stack on this Systems is to not use the Timestamp options when
+  initiating TCP connections, but use them if the TCP peer that is initiating communication includes
+  them in their synchronize (SYN) segment.
+
+  See the references for more information.","TCP implementations that implement RFC1323/RFC7323.","The remote host implements TCP timestamps, as defined by
+  RFC1323/RFC7323.","Special IP packets are forged and sent with a little delay in
+  between to the target IP. The responses are searched for a timestamps. If found, the timestamps
+  are reported.
+Details:
+TCP Timestamps Information Disclosure
+(OID: 1.3.6.1.4.1.25623.1.0.80091)
+Version used: 2023-12-15T16:10:08Z
+","","","",""
+172.18.0.3,si084_juiceshop.audit_net,,,0.0,Log,80,"","Traceroute","Collect information about the network route and
+  network distance between the scanner host and the target host.","Network route from scanner (172.18.0.9) to target (172.18.0.3):
+
+172.18.0.9
+172.18.0.3
+
+Network distance between scanner and target: 2
+",1.3.6.1.4.1.25623.1.0.51662,"",f4c76f15-73fc-4a70-adb9-f2da935ace07,"E03-Escaneo-si084-lab",2026-09-02T21:30:47Z,d0b10e86-00fe-415c-866f-5cd62d9283dc,"","","","For internal networks, the distances are usually
+  small, often less than 4 hosts between scanner and target. For public targets the
+  distance is greater and might be 10 hosts or more.","A combination of the protocols ICMP and TCP is used
+  to determine the route. This method is applicable for IPv4 only and it is also known as
+  'traceroute'.
+Details:
+Traceroute
+(OID: 1.3.6.1.4.1.25623.1.0.51662)
+Version used: 2022-10-17T11:13:19Z
+","","","",""
+172.18.0.5,si084_db.audit_net,,,0.0,Log,80,"","Traceroute","Collect information about the network route and
+  network distance between the scanner host and the target host.","Network route from scanner (172.18.0.9) to target (172.18.0.5):
+
+172.18.0.9
+172.18.0.5
+
+Network distance between scanner and target: 2
+",1.3.6.1.4.1.25623.1.0.51662,"",f4c76f15-73fc-4a70-adb9-f2da935ace07,"E03-Escaneo-si084-lab",2026-09-02T21:30:47Z,43b045f5-ef6a-41f0-afe4-6e91fc0874fb,"","","","For internal networks, the distances are usually
+  small, often less than 4 hosts between scanner and target. For public targets the
+  distance is greater and might be 10 hosts or more.","A combination of the protocols ICMP and TCP is used
+  to determine the route. This method is applicable for IPv4 only and it is also known as
+  'traceroute'.
+Details:
+Traceroute
+(OID: 1.3.6.1.4.1.25623.1.0.51662)
+Version used: 2022-10-17T11:13:19Z
+","","","",""
+172.18.0.2,si084_dvwa.audit_net,,,0.0,Log,80,"","Traceroute","Collect information about the network route and
+  network distance between the scanner host and the target host.","Network route from scanner (172.18.0.9) to target (172.18.0.2):
+
+172.18.0.9
+172.18.0.2
+
+Network distance between scanner and target: 2
+",1.3.6.1.4.1.25623.1.0.51662,"",f4c76f15-73fc-4a70-adb9-f2da935ace07,"E03-Escaneo-si084-lab",2026-09-02T21:30:47Z,789c1654-768f-4619-b345-8da9fa60f39a,"","","","For internal networks, the distances are usually
+  small, often less than 4 hosts between scanner and target. For public targets the
+  distance is greater and might be 10 hosts or more.","A combination of the protocols ICMP and TCP is used
+  to determine the route. This method is applicable for IPv4 only and it is also known as
+  'traceroute'.
+Details:
+Traceroute
+(OID: 1.3.6.1.4.1.25623.1.0.51662)
+Version used: 2022-10-17T11:13:19Z
+","","","",""
+172.18.0.4,si084_portal.audit_net,,,0.0,Log,80,"","Traceroute","Collect information about the network route and
+  network distance between the scanner host and the target host.","Network route from scanner (172.18.0.9) to target (172.18.0.4):
+
+172.18.0.9
+172.18.0.4
+
+Network distance between scanner and target: 2
+",1.3.6.1.4.1.25623.1.0.51662,"",f4c76f15-73fc-4a70-adb9-f2da935ace07,"E03-Escaneo-si084-lab",2026-09-02T21:30:47Z,7cd538c0-29b2-4d0c-bf5a-50839ac7b5fb,"","","","For internal networks, the distances are usually
+  small, often less than 4 hosts between scanner and target. For public targets the
+  distance is greater and might be 10 hosts or more.","A combination of the protocols ICMP and TCP is used
+  to determine the route. This method is applicable for IPv4 only and it is also known as
+  'traceroute'.
+Details:
+Traceroute
+(OID: 1.3.6.1.4.1.25623.1.0.51662)
+Version used: 2022-10-17T11:13:19Z
+","","","",""
+172.18.0.3,si084_juiceshop.audit_net,3000,tcp,0.0,Log,80,"","Web Application Scanning Consolidation / Info Reporting","The script consolidates and reports various information for web
+  application (formerly called 'CGI') scanning.
+
+  This information is based on the following scripts / settings:
+
+  - HTTP-Version Detection (OID: 1.3.6.1.4.1.25623.1.0.100034)
+
+  - No 404 check (OID: 1.3.6.1.4.1.25623.1.0.10386)
+
+  - Web mirroring / webmirror.nasl (OID: 1.3.6.1.4.1.25623.1.0.10662)
+
+  - Directory Scanner / DDI_Directory_Scanner.nasl (OID: 1.3.6.1.4.1.25623.1.0.11032)
+
+  - The configured 'cgi_path' within the 'Scanner Preferences' of the scan config in use
+
+  - The configured 'Enable CGI scanning', 'Enable generic web application scanning' and
+  'Add historic /scripts and /cgi-bin to directories for CGI scanning' within the
+  'Global variable settings' of the scan config in use
+
+  If you think any of this information is wrong please report it to the referenced community
+  forum.","The Hostname/IP ""si084_juiceshop.audit_net"" was used to access the remote host.
+
+Generic web application scanning is disabled for this host via the ""Enable generic web application scanning"" option within the ""Global variable settings"" of the scan config in use.
+
+The service is responding with a 200 HTTP status code to non-existent files/urls. The following pattern is used to work around possible false detections:
+-----
+404
+-----
+
+Requests to this service are done via HTTP/1.1.
+
+This service seems to be able to host PHP scripts.
+
+This service seems to be able to host ASP scripts.
+
+The User-Agent ""Mozilla/5.0 [en] (X11, U; OpenVAS-VT <version replaced>)"" was used to access the remote host.
+
+Historic /scripts and /cgi-bin are not added to the directories used for web application scanning. You can enable this again with the ""Add historic /scripts and /cgi-bin to directories for CGI scanning"" option within the ""Global variable settings"" of the scan config in use.
+
+The following directories were used for web application scanning:
+
+http://si084_juiceshop.audit_net:3000/
+http://si084_juiceshop.audit_net:3000/.well-known
+http://si084_juiceshop.audit_net:3000/.well-known/csaf
+http://si084_juiceshop.audit_net:3000/ftp
+http://si084_juiceshop.audit_net:3000/ftp/quarantine
+http://si084_juiceshop.audit_net:3000/video
+
+While this is not, in and of itself, a bug, you should manually inspect these directories to ensure that they are in compliance with company security standards
+",1.3.6.1.4.1.25623.1.0.111038,"",f4c76f15-73fc-4a70-adb9-f2da935ace07,"E03-Escaneo-si084-lab",2026-09-02T21:30:47Z,b1a97b14-4fb0-44fb-bd9e-339dd96a5a71,"","","","","
+Details:
+Web Application Scanning Consolidation / Info Reporting
+(OID: 1.3.6.1.4.1.25623.1.0.111038)
+Version used: 2026-02-24T05:57:09Z
+","","","",""
+172.18.0.4,si084_portal.audit_net,80,tcp,0.0,Log,80,"","Web Application Scanning Consolidation / Info Reporting","The script consolidates and reports various information for web
+  application (formerly called 'CGI') scanning.
+
+  This information is based on the following scripts / settings:
+
+  - HTTP-Version Detection (OID: 1.3.6.1.4.1.25623.1.0.100034)
+
+  - No 404 check (OID: 1.3.6.1.4.1.25623.1.0.10386)
+
+  - Web mirroring / webmirror.nasl (OID: 1.3.6.1.4.1.25623.1.0.10662)
+
+  - Directory Scanner / DDI_Directory_Scanner.nasl (OID: 1.3.6.1.4.1.25623.1.0.11032)
+
+  - The configured 'cgi_path' within the 'Scanner Preferences' of the scan config in use
+
+  - The configured 'Enable CGI scanning', 'Enable generic web application scanning' and
+  'Add historic /scripts and /cgi-bin to directories for CGI scanning' within the
+  'Global variable settings' of the scan config in use
+
+  If you think any of this information is wrong please report it to the referenced community
+  forum.","The Hostname/IP ""si084_portal.audit_net"" was used to access the remote host.
+
+Generic web application scanning is disabled for this host via the ""Enable generic web application scanning"" option within the ""Global variable settings"" of the scan config in use.
+
+Requests to this service are done via HTTP/1.1.
+
+This service seems to be able to host PHP scripts.
+
+This service seems to be able to host ASP scripts.
+
+The User-Agent ""Mozilla/5.0 [en] (X11, U; OpenVAS-VT <version replaced>)"" was used to access the remote host.
+
+Historic /scripts and /cgi-bin are not added to the directories used for web application scanning. You can enable this again with the ""Add historic /scripts and /cgi-bin to directories for CGI scanning"" option within the ""Global variable settings"" of the scan config in use.
+
+The following directories were used for web application scanning:
+
+http://si084_portal.audit_net/
+
+While this is not, in and of itself, a bug, you should manually inspect these directories to ensure that they are in compliance with company security standards
+",1.3.6.1.4.1.25623.1.0.111038,"",f4c76f15-73fc-4a70-adb9-f2da935ace07,"E03-Escaneo-si084-lab",2026-09-02T21:30:47Z,303826f6-c79c-47b3-846a-5a584ea80ec7,"","","","","
+Details:
+Web Application Scanning Consolidation / Info Reporting
+(OID: 1.3.6.1.4.1.25623.1.0.111038)
+Version used: 2026-02-24T05:57:09Z
+","","","",""
+172.18.0.2,si084_dvwa.audit_net,80,tcp,0.0,Log,80,"","Web Application Scanning Consolidation / Info Reporting","The script consolidates and reports various information for web
+  application (formerly called 'CGI') scanning.
+
+  This information is based on the following scripts / settings:
+
+  - HTTP-Version Detection (OID: 1.3.6.1.4.1.25623.1.0.100034)
+
+  - No 404 check (OID: 1.3.6.1.4.1.25623.1.0.10386)
+
+  - Web mirroring / webmirror.nasl (OID: 1.3.6.1.4.1.25623.1.0.10662)
+
+  - Directory Scanner / DDI_Directory_Scanner.nasl (OID: 1.3.6.1.4.1.25623.1.0.11032)
+
+  - The configured 'cgi_path' within the 'Scanner Preferences' of the scan config in use
+
+  - The configured 'Enable CGI scanning', 'Enable generic web application scanning' and
+  'Add historic /scripts and /cgi-bin to directories for CGI scanning' within the
+  'Global variable settings' of the scan config in use
+
+  If you think any of this information is wrong please report it to the referenced community
+  forum.","The Hostname/IP ""si084_dvwa.audit_net"" was used to access the remote host.
+
+Generic web application scanning is disabled for this host via the ""Enable generic web application scanning"" option within the ""Global variable settings"" of the scan config in use.
+
+Requests to this service are done via HTTP/1.1.
+
+This service seems to be able to host PHP scripts.
+
+This service seems to be able to host ASP scripts.
+
+The User-Agent ""Mozilla/5.0 [en] (X11, U; OpenVAS-VT <version replaced>)"" was used to access the remote host.
+
+Historic /scripts and /cgi-bin are not added to the directories used for web application scanning. You can enable this again with the ""Add historic /scripts and /cgi-bin to directories for CGI scanning"" option within the ""Global variable settings"" of the scan config in use.
+
+The following directories were used for web application scanning:
+
+http://si084_dvwa.audit_net/
+
+While this is not, in and of itself, a bug, you should manually inspect these directories to ensure that they are in compliance with company security standards
+",1.3.6.1.4.1.25623.1.0.111038,"",f4c76f15-73fc-4a70-adb9-f2da935ace07,"E03-Escaneo-si084-lab",2026-09-02T21:30:47Z,a90a2da0-a2b1-4514-acb5-d432a961166a,"","","","","
+Details:
+Web Application Scanning Consolidation / Info Reporting
+(OID: 1.3.6.1.4.1.25623.1.0.111038)
+Version used: 2026-02-24T05:57:09Z
+","","","",""

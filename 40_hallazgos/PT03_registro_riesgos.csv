@@ -1,0 +1,16 @@
+id_riesgo,activo,dueno_del_riesgo,clasificacion,amenaza,vulnerabilidad,cve,cvss,probabilidad,impacto,riesgo_inherente,nivel
+R-011,App legada interna (si084_dvwa),Gerencia de Operaciones,Interna,Explotacion remota de vulnerabilidad o exposicion de informacion,Operating System (OS) End of Life (EOL) Detection,,10.0,4,3,12,Alto
+R-006,Portal de clientes (si084_juiceshop),Gerencia Comercial,Confidencial,Explotacion remota de vulnerabilidad o exposicion de informacion,HTTP Security Headers Detection,,0.0,2,4,8,Medio
+R-001,Portal de clientes (si084_juiceshop),Gerencia Comercial,Confidencial,Explotacion remota de vulnerabilidad o exposicion de informacion,Allowed HTTP Methods Enumeration,,0.0,2,4,8,Medio
+R-012,Portal de clientes (si084_juiceshop),Gerencia Comercial,Confidencial,Explotacion remota de vulnerabilidad o exposicion de informacion,TCP Timestamps Information Disclosure,,2.6,2,4,8,Medio
+R-007,Portal de clientes (si084_juiceshop),Gerencia Comercial,Confidencial,Explotacion remota de vulnerabilidad o exposicion de informacion,ICMP Timestamp Reply Information Disclosure,,2.1,2,4,8,Medio
+R-003,Base de datos ERP (si084_db),Gerencia de Finanzas,Restringida,Explotacion remota de vulnerabilidad o exposicion de informacion,Database Open Access Information Disclosure Vulnerability,,0.0,1,5,5,Bajo
+R-015,Base de datos ERP (si084_db),Gerencia de Finanzas,Restringida,Explotacion remota de vulnerabilidad o exposicion de informacion,TCP Timestamps Information Disclosure,,2.6,1,5,5,Bajo
+R-009,Base de datos ERP (si084_db),Gerencia de Finanzas,Restringida,Explotacion remota de vulnerabilidad o exposicion de informacion,ICMP Timestamp Reply Information Disclosure,,2.1,1,5,5,Bajo
+R-013,App legada interna (si084_dvwa),Gerencia de Operaciones,Interna,Explotacion remota de vulnerabilidad o exposicion de informacion,TCP Timestamps Information Disclosure,,2.6,1,3,3,Bajo
+R-004,App legada interna (si084_dvwa),Gerencia de Operaciones,Interna,Explotacion remota de vulnerabilidad o exposicion de informacion,HTTP Security Headers Detection,,0.0,1,3,3,Bajo
+R-010,App legada interna (si084_dvwa),Gerencia de Operaciones,Interna,Explotacion remota de vulnerabilidad o exposicion de informacion,ICMP Timestamp Reply Information Disclosure,,2.1,1,3,3,Bajo
+R-005,Portal corporativo (si084_portal),Gerencia Comercial,Publica,Explotacion remota de vulnerabilidad o exposicion de informacion,HTTP Security Headers Detection,,0.0,2,1,2,Bajo
+R-002,Portal corporativo (si084_portal),Gerencia Comercial,Publica,Explotacion remota de vulnerabilidad o exposicion de informacion,Allowed HTTP Methods Enumeration,,0.0,2,1,2,Bajo
+R-008,Portal corporativo (si084_portal),Gerencia Comercial,Publica,Explotacion remota de vulnerabilidad o exposicion de informacion,ICMP Timestamp Reply Information Disclosure,,2.1,2,1,2,Bajo
+R-014,Portal corporativo (si084_portal),Gerencia Comercial,Publica,Explotacion remota de vulnerabilidad o exposicion de informacion,TCP Timestamps Information Disclosure,,2.6,2,1,2,Bajo
